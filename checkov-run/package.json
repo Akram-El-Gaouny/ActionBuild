@@ -1,0 +1,26 @@
+{
+  "name": "actionbuild",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://akram-el-gaouny@dev.azure.com/akram-el-gaouny/CheckovTest/_git/ActionBuild"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^4.2.0",
+    "deno": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.11.19",
+    "@types/q": "^1.5.5",
+    "sync-request": "^6.1.0"
+  }
+}

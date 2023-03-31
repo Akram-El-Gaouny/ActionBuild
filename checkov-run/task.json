@@ -1,0 +1,40 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+    "id": "c57ef896-c4f8-4f23-af47-8b5e46cce4ed",
+    "name": "run-checkov",
+    "friendlyName": "Run Checkov Checks on Terraform",
+    "description": "Action to run checkov",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "Akram El-Gaouny",
+    "version": {
+        "Major": 0,
+        "Minor": 1,
+        "Patch": 0
+    },
+    "instanceNameFormat": "Running Checkov on the specified directory",
+    "inputs": [
+        {
+            "name": "path",
+            "type": "string",
+            "label": "TF files Path",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Specify where the Terraform files are located"
+        },
+
+        {
+            "name": "outputPath",
+            "type": "string",
+            "label": "xml Output Path",
+            "defaultValue": "Checkov-Root-Report.xml",
+            "required": false,
+            "helpMarkDown": "Specify the path for the output file"
+        }
+    ],
+    "execution": {
+        "Node": {
+            "target": "index.js"
+        }
+    }
+    }
